@@ -214,10 +214,10 @@
 <device name="" package="1734723-1_RJ11">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="3"/>
-<connect gate="G$1" pin="3" pad="5"/>
-<connect gate="G$1" pin="4" pad="2"/>
-<connect gate="G$1" pin="5" pad="4"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
 <connect gate="G$1" pin="6" pad="6"/>
 <connect gate="G$1" pin="SH1" pad="SH1"/>
 <connect gate="G$1" pin="SH2" pad="SH2"/>
