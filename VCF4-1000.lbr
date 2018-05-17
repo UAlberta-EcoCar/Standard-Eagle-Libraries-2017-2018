@@ -195,8 +195,63 @@
 </package>
 </packages>
 <symbols>
+<symbol name="VCF4-1000">
+<wire x1="5.08" y1="-5.08" x2="27.94" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-5.08" x2="27.94" y2="15.24" width="0.254" layer="94"/>
+<wire x1="27.94" y1="15.24" x2="5.08" y2="15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="15.24" x2="-5.08" y2="15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="15.24" x2="5.08" y2="8.89" width="0.254" layer="94"/>
+<wire x1="5.08" y1="8.89" x2="5.08" y2="1.27" width="0.254" layer="94"/>
+<wire x1="5.08" y1="1.27" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="1.27" x2="3.81" y2="3.81" width="0.254" layer="94"/>
+<wire x1="3.81" y1="3.81" x2="3.81" y2="2.54" width="0.254" layer="94" curve="306.869898"/>
+<wire x1="3.81" y1="2.54" x2="2.54" y2="6.35" width="0.254" layer="94" curve="90"/>
+<wire x1="2.54" y1="6.35" x2="2.54" y2="3.81" width="0.254" layer="94" curve="233.130102"/>
+<wire x1="2.54" y1="3.81" x2="2.54" y2="7.62" width="0.254" layer="94" curve="126.870198"/>
+<wire x1="2.54" y1="7.62" x2="2.54" y2="5.08" width="0.254" layer="94" curve="233.129877"/>
+<wire x1="2.54" y1="5.08" x2="5.08" y2="8.89" width="0.254" layer="94" curve="59.490008"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="2.54" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="15.24" y2="5.08" width="0.254" layer="94"/>
+<wire x1="15.24" y1="5.08" x2="20.32" y2="10.16" width="0.254" layer="94"/>
+<pin name="30" x="15.24" y="20.32" length="middle" rot="R270"/>
+<pin name="85" x="0" y="-10.16" length="middle" rot="R90"/>
+<pin name="86" x="0" y="20.32" length="middle" rot="R270"/>
+<pin name="87" x="33.02" y="0" length="middle" rot="R180"/>
+<pin name="87A" x="33.02" y="10.16" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
+<deviceset name="VCF4-1000">
+<description>Part for the VCF4-1000 relay socket.
+
+Digi-Key Part Number: PB232-ND.
+
+Pin numbering is directly taken from the data sheet of the relay. 
+
+Relay Digi-Key Part Number: 255-2083-ND (Also works with 255-1825-ND).
+
+If using relay 255-1825-ND, ignore pin 87A.</description>
+<gates>
+<gate name="G$1" symbol="VCF4-1000" x="-38.1" y="10.16"/>
+</gates>
+<devices>
+<device name="" package="VCF4-1000">
+<connects>
+<connect gate="G$1" pin="30" pad="30"/>
+<connect gate="G$1" pin="85" pad="85"/>
+<connect gate="G$1" pin="86" pad="86"/>
+<connect gate="G$1" pin="87" pad="87"/>
+<connect gate="G$1" pin="87A" pad="87A"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

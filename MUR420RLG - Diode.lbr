@@ -205,8 +205,38 @@
 </package>
 </packages>
 <symbols>
+<symbol name="MUR420RLG">
+<wire x1="7.62" y1="5.08" x2="7.62" y2="0" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="0" x2="17.78" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-5.08" x2="17.78" y2="5.08" width="0.254" layer="94"/>
+<wire x1="17.78" y1="5.08" x2="7.62" y2="0" width="0.254" layer="94"/>
+<pin name="1" x="2.54" y="0" length="middle" direction="pas"/>
+<pin name="2" x="22.86" y="0" length="middle" direction="pas" rot="R180"/>
+<text x="15.5956" y="9.1186" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
+<text x="14.9606" y="6.5786" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
+</symbol>
 </symbols>
 <devicesets>
+<deviceset name="MUR420RLG" prefix="CR">
+<gates>
+<gate name="A" symbol="MUR420RLG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DO-201AD">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER_PART_NUMBER" value="MUR420RLG" constant="no"/>
+<attribute name="VENDOR" value="ON Semiconductor" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

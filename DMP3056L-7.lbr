@@ -172,8 +172,35 @@
 </package>
 </packages>
 <symbols>
+<symbol name="DMP3056L-7">
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="DRAIN" x="-12.7" y="0" length="middle"/>
+<pin name="GATE" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="SOURCE" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<text x="-7.62" y="7.62" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
+<deviceset name="DMP3056L-7">
+<gates>
+<gate name="G$1" symbol="DMP3056L-7" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DMP3056L-7" package="DMP3056L-7">
+<connects>
+<connect gate="G$1" pin="DRAIN" pad="D"/>
+<connect gate="G$1" pin="GATE" pad="G"/>
+<connect gate="G$1" pin="SOURCE" pad="S"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
