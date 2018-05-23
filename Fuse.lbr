@@ -166,6 +166,8 @@
 <pad name="IN" x="3.81" y="7.62" drill="1.27" shape="square"/>
 <pad name="OUT" x="-3.81" y="7.62" drill="1.27" shape="square"/>
 <hole x="0" y="0" drill="2.0828"/>
+<text x="-7.62" y="13.97" size="1.778" layer="25">&gt;name</text>
+<text x="-7.62" y="11.43" size="1.778" layer="27">&gt;value</text>
 </package>
 </packages>
 <symbols>
@@ -180,7 +182,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="FUSE" prefix="TE">
+<deviceset name="FUSE" prefix="F">
 <gates>
 <gate name="G$1" symbol="BLADE-FUSE" x="0" y="0"/>
 </gates>
